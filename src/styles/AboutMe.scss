@@ -1,0 +1,90 @@
+@import 'variables';
+@import 'mixins';
+@import 'mediaQueriesDesktop';
+@import 'mediaQueriesTablet';
+
+.aboutme-container {
+  @include flexStandardJustify();
+  font-family: $primary-font;
+  font-size: 50px;
+  height: auto;
+  align-items: center;
+  margin: 0px;
+  @include about-me-container-desktop();
+}
+
+.banner-about {
+  width: 1000px;
+  height: 200px;
+  @include banner-desktop();
+  @include banner-tablet();
+}
+
+.h1-aboutme {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.about-about {
+  height: 100px;
+  width: 250px;
+  margin-top: 0px;
+  transform: rotate(5deg);
+  @include about-img-desktop();
+  @include about-img-tablet();
+}
+
+.janika {
+  height: auto;
+  width: 500px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  border: solid black 5px;
+  @include janika-desktop();
+  @include janika-tablet();
+}
+
+.about-moi {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include about-moi-img-desktop();
+  @include about-moi-tablet();
+}
+
+.words-me {
+  font-size: 20px;
+  width: 75%;
+  @include words-desktop();
+  @include words-tablet();
+}
+
+.arrow {
+  height: 50px;
+  width: auto;
+  margin-top: 25px;
+}
+
+.aboutme-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include aboutme-box-desktop();
+  @include aboutme-box-tablet();
+}
+
+.grilled-cheese{
+  text-align: center;
+}
+
+.story {
+  margin: 0px;
+}
+
+.img-about {
+  margin: 0px;
+}

@@ -1,0 +1,64 @@
+@import 'mixins';
+
+@mixin banner-tablet {
+  @media screen and (max-width: 640px) {
+    width: 300px;
+    height: auto;
+  }
+}
+
+@mixin about-img-tablet {
+  @media screen and (max-width: 640px) {
+    height: 40px;
+    width: auto;
+  }
+}
+
+@mixin projects-tablet {
+  @media screen and (max-width: 640px) {
+    height: 50px;
+    width: auto;
+  }
+}
+
+@mixin janika-tablet {
+  @media screen and (max-width: 640px) {
+    width: 250px;
+    height: auto;
+  }
+}
+
+@mixin words-tablet {
+  @media screen and (max-width: 640px) {
+    font-size: 12px;
+    width: 100%;
+  }
+}
+
+@mixin aboutme-box-tablet {
+  @media screen and (max-width: 640px) {
+    width: 75%;
+    @include flexStandardAlign();
+  }
+}
+
+@mixin about-moi-tablet {
+  @media screen and (max-width: 640px) {
+    @include flexStandardAlign();
+  }
+}
+
+@mixin arrow-tablet {
+  @media screen and (max-width: 640px) {
+    margin: 0px;
+  }
+}
+
+@mixin error-tablet {
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

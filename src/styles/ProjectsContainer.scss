@@ -1,0 +1,37 @@
+@import 'mediaQueriesDesktop';
+@import 'mediaQueriesTablet';
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.title-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-projects {
+  width: 1000px;
+  height: 200px;
+  @include banner-desktop();
+  @include banner-tablet();
+}
+
+.projects-projects {
+  height: 100px;
+  width: 275px;
+  transform: rotate(-5deg);
+  @include projects-desktop();
+  @include projects-tablet();
+}
+
+.back-arrow {
+  height: auto;
+  width: 250px;
+  margin-top: 25px;
+  @include arrow-tablet();
+}

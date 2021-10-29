@@ -1,0 +1,98 @@
+@import 'mediaQueriesDesktop';
+@import 'mediaQueriesTablet';
+
+nav {
+ font-family: 'Poppins', sans-serif;
+ font-size: 50px;
+ height: auto;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.banner-nav {
+  width: 1000px;
+  height: 200px;
+  @include banner-desktop();
+  @include banner-tablet();
+}
+
+.h1-banner {
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+
+.about-nav {
+  height: 100px;
+  width: 250px;
+  margin-top: 15px;
+  transform: rotate(5deg);
+  @include about-img-desktop();
+  @include about-img-tablet();
+}
+
+.about-nav:hover {
+  -webkit-transform: rotateZ(15deg);
+  -ms-transform: rotateZ(15deg);
+  transform: rotateZ(15deg);
+}
+
+.projects-nav {
+  height: 100px;
+  width: 275px;
+  margin-top: 0px;
+  transform: rotate(-5deg);
+  @include projects-desktop();
+  @include projects-tablet();
+}
+
+.projects-nav:hover {
+  -webkit-transform: rotateZ(5deg);
+  -ms-transform: rotateZ(5deg);
+  transform: rotateZ(5deg);
+}
+
+section {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  margin-right: 25px;
+}
+
+img {
+  height: 50px;
+  width: 50px;
+}
+
+.gitHub {
+  background-image: url('../assets/github.png');
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+}
+
+.gitHub:hover,
+.linkedIn:hover,
+.email:hover {
+  -webkit-transform: rotateZ(-30deg);
+  -ms-transform: rotateZ(-30deg);
+  transform: rotateZ(-30deg);
+}
+
+.linkedIn {
+  background-image: url('../assets/linkedin.png');
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+}
+
+.email {
+  background-image: url('../assets/email.png');
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+}

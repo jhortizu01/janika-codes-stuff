@@ -1,0 +1,67 @@
+@import 'mediaQueriesDesktop';
+@import 'variables';
+
+.card {
+  border: black solid 3px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 25px;
+  border: black dashed 3px;
+  font-family: $primary-font;
+  padding: 25px;
+  width: 75%;
+  @include card-desktop();
+}
+
+.project-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box1,
+.box2 {
+  width: 47%;
+  @include box-desktop();
+}
+
+.project-img {
+  height: 100%;
+  width: 100%;
+  border-radius: 35%;
+  border: palevioletred solid 5px;
+  @include project-img-desktop();
+}
+
+.box2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  @include text-align-desktop();
+}
+
+
+.gitHubCode {
+  background-image: url('../assets/code-button.png');
+  background-size: 150px auto;
+  background-repeat: no-repeat;
+  height: 75px;
+  width: 150px;
+}
+
+.gitHubCode:hover {
+    -webkit-transform: rotateZ(-30deg);
+    -ms-transform: rotateZ(-30deg);
+    transform: rotateZ(-30deg);
+}
+
+@media screen and (max-width: 1000px) {
+  .box1 {
+    display: flex;
+    justify-content: center;
+  }
+}
+ 

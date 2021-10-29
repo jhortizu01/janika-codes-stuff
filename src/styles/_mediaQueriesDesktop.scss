@@ -1,0 +1,103 @@
+@import 'mixins';
+
+@mixin banner-desktop {
+  @media screen and (max-width: 1000px) {
+      width: 600px;
+      height: auto;
+  }
+}
+
+@mixin about-img-desktop {
+  @media screen and (max-width: 1000px) {
+    height: 60px;
+    width: auto;
+    transform: rotate(5deg);
+  }
+}
+
+@mixin about-moi-img-desktop {
+  @media screen and (max-width: 1000px) {
+    @include flexStandardAlign();
+  }
+}
+
+@mixin words-desktop {
+  @media screen and (max-width: 1000px) {
+    margin-left: 0px;
+    margin-top: 25px;
+  }
+}
+
+@mixin aboutme-box-desktop {
+  @media screen and (max-width: 1000px) {
+    margin: 0px;
+  }
+}
+
+@mixin janika-desktop {
+  @media screen and (max-width: 1000px) {
+    width: 487px;
+    height: auto;
+    margin: 0px;
+  }
+}
+
+@mixin about-me-container-desktop {
+  @media screen and (max-width: 1000px) {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@mixin projects-desktop {
+  @media screen and (max-width: 1000px) {
+    height: 75px;
+    width: auto;
+  }
+}
+
+@mixin card-desktop{
+  @media screen and (max-width: 1000px) {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+  }
+}
+
+@mixin box-desktop{
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+  }
+}
+
+@mixin box1-desktop {
+  @media screen and (max-width: 1000px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@mixin text-align-desktop {
+  @media screen and (max-width: 1000px) {
+    text-align: center;
+  }
+}
+
+@mixin project-img-desktop {
+  @media screen and (max-width: 1000px) {
+    text-align: center;
+  }
+}
+
+@mixin project-cards-desktop {
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
