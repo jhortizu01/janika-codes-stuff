@@ -22,10 +22,9 @@ describe('Web page user flows', () => {
       .click()
       .get('.project-cards')
       .children()
-      .should('have.length', 5)
+      .should('have.length', 8)
       .get('.back-arrow')
       .click()
       .url().should('include', '/')
   })
-
 })
