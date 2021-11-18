@@ -35,3 +35,9 @@
   margin-top: 25px;
   @include arrow-tablet();
 }
+
+.back-arrow:hover {
+  -webkit-transform: rotateZ(15deg);
+  -ms-transform: rotateZ(15deg);
+  transform: rotateZ(8deg);
+}

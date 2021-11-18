@@ -88,7 +88,8 @@
 
 @mixin project-img-desktop {
   @media screen and (max-width: 1000px) {
-    text-align: center;
+   width: 300px;
+   height: auto;
   }
 }
 
@@ -101,3 +102,17 @@
   }
 }
 
+@mixin animation-content-desktop {
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@mixin gitHub-code-desktop {
+  @media screen and (max-width: 1000px) {
+    margin-left: 0px;
+  }
+}
